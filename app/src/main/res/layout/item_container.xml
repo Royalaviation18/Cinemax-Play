@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="9dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/popularMovieImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:shapeAppearanceOverlay="@style/SoftCorner">
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Movie Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/popularMovieImage"
+            app:layout_constraintTop_toTopOf="@id/popularMovieImage" />
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"
+            android:text="Release Date"
+            app:layout_constraintLeft_toLeftOf="@id/tvTittle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTittle" />
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"
+            android:text="Language of the movie"
+            app:layout_constraintLeft_toLeftOf="@id/tvTittle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTittle" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="353dp"
+            android:src="@drawable/baseline_share_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/popularMovieImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
