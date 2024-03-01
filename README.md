@@ -6,7 +6,7 @@
 
 - An app to show a list of movies from Movies DB(for ex Getting Started )
 
-- There are two types of list should be shown 1. Top Rated 2. Popular movies. (You can design the ui as per your own wish.But both category should visible & must be differentiated)
+- There are two types of list should be shown 1. Top Rated 2. Popular movies. (You can design the UI as per your own wish. But both categories should visible & must be differentiated)
 
 - Each card on the list should have the bare minimum details such as name, rating, language, image, year, etc.
 
@@ -41,13 +41,13 @@
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Royalaviation18/Cinemax-Play/
 ```
 
 Go to the project directory
 
 ```bash
-  cd Java-Parking-Allotment-main
+  cd Cinemax-Play-master
 ```
 
 Open the App in Android Studio
